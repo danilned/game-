@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="TopMenu" id="TopMenu">
+        <span id="Production"><span></span></span>
+        <img id="IMGTop">
+    </div>
+    <input readonly class="FuncCalls">
+<div class="grids">
+    <form action="server.js" method="post">
+    <div class="grid_line1">
+            <div class="hexagon">
+                <span class="left_angle"></span>
+                <div class="center"><button type="button" oncontextmenu="moves(0); return false" class="tile"></button></div>
+                <span class="right_angle"></span>
+            </div>
+            <div class="hexagon">
+                <span class="left_angle"></span>
+                <div class="center"><button type="button" oncontextmenu="moves(1); return false" class="tile"></button></div>
+                <span class="right_angle"></span>
+            </div>
+            <div class="hexagon">
+                <span class="left_angle"></span>
+                <div class="center"><button type="button" oncontextmenu="moves(2); return false" class="tile"></button></div>
+                <span class="right_angle"></span>
+            </div>
+            <div class="hexagon">
+                <span class="left_angle"></span>
+                <div class="center"><button type="button" oncontextmenu="moves(3); return false" class="tile"></button></div>
+                <span class="right_angle"></span>
+            </div>
+            <div class="hexagon">
+                <span class="left_angle"></span>
+                <div class="center"><button type="button" oncontextmenu="moves(4); return false" class="tile"></button></div>
+                <span class="right_angle"></span>
+            </div>
+        </div>
+            <div class="grid_line2">
+                <div class="hexagon">
+                    <span class="left_angle"></span>
+                    <div class="center"><button type="button" oncontextmenu="moves(5); return false" class="tile"></button></div>
+                    <span class="right_angle"></span>
+                </div>
+                <div class="hexagon">
+                    <span class="left_angle"></span>
+                    <div class="center"><button type="button" oncontextmenu="moves(6); return false" class="tile"></button></div>
+                    <span class="right_angle"></span>
+                </div>
+                <div class="hexagon">
+                    <span class="left_angle"></span>
+                    <div class="center"><button type="button" oncontextmenu="moves(7); return false" class="tile"></button></div>
+                    <span class="right_angle"></span>
+                </div>
+                <div class="hexagon">
+                    <span class="left_angle"></span>
+                    <div class="center"><button type="button" oncontextmenu="moves(8); return false" class="tile"></button></div>
+                    <span class="right_angle"></span>
+                </div>
+                <div class="hexagon">
+                    <span class="left_angle"></span>
+                    <div class="center"><button type="button" oncontextmenu="moves(9); return false" class="tile"></button></div>
+                    <span class="right_angle"></span>
+                </div>
+                <div class="hexagon">
+                    <span class="left_angle"></span>
+                    <div class="center"><button type="button" oncontextmenu="moves(10); return false" class="tile"></button></div>
+                    <span class="right_angle"></span>
+                </div>
+            </div>
+                <div class="grid_line3">
+                    <div class="hexagon">
+                        <span class="left_angle"></span>
+                        <div class="center"><button type="button" oncontextmenu="moves(11); return false" class="tile"><img src="img/bbarb.png" onclick = " botTurn.value = 'Turns: 1/1'; menuIMG.setAttribute('src', 'img/bbarb.png'); inputs[0].value = 'HealthPoint: ' + HealthPoint[0]; GlobalIndex = 0;" class="unit" id="unit1" datablue-sort="0"><img src="img/houseBlue.png" onclick="MKBarb.innerHTML = 'Make barbarian: '  + Math.floor(10 / AnvilCounterBlue) + ' turns'; MKArcher.innerHTML = 'Make archer: '  + Math.floor(10 / AnvilCounterBlue) + ' turns'; MKHorse.innerHTML = 'Make HorseMan: '  + Math.floor(10 / AnvilCounterBlue) + ' turns'; tavernHealthpoint.value = `${'HealthPoint: ' + BlueHouse}`; houseMenu.style.display = 'block'; bottomMenu.style.display = 'none'; mainHouse.setAttribute('src', 'img/houseBlue.png');" class="house"></button></div>
+                        <span class="right_angle"></span>
+                    </div>
+                    <div class="hexagon">
+                        <span class="left_angle"></span>
+                        <div class="center"><button type="button" oncontextmenu="moves(12); return false" class="tile"></button></div>
+                        <span class="right_angle"></span>
+                    </div>
+                    <div class="hexagon">
+                        <span class="left_angle"></span>
+                        <div class="center"><button type="button" oncontextmenu="moves(13); return false" class="tile"></button></div>
+                        <span class="right_angle"></span>
+                    </div>
+                    <div class="hexagon">
+                        <span class="left_angle"></span>
+                        <div class="center"><button type="button" oncontextmenu="moves(14); return false" class="tile"></button></div>
+                        <span class="right_angle"></span>
+                    </div>
+                    <div class="hexagon">
+                        <span class="left_angle"></span>
+                        <div class="center"><button type="button" oncontextmenu="moves(15); return false" class="tile"><img src="img/rbarb.png" onclick=" botTurn.value = 'Turns: 1/1'; menuIMG.setAttribute('src', 'img/rbarb.png'); inputs[0].value = 'HealthPoint: ' + HealthPointRed[0]; GlobalIndex = 0;" class="unit" id="unit2" datared-sort="0"><img src="img/houseRed.png" onclick="MKBarb.innerHTML = 'Make barbarian: '  + Math.floor(10 / AnvilCounterRed) + ' turns'; MKArcher.innerHTML = 'Make archer: '  + Math.floor(10 / AnvilCounterRed) + ' turns'; MKHorse.innerHTML = 'Make HorseMan: '  + Math.floor(10 / AnvilCounterRed) + ' turns'; tavernHealthpoint.value = `${'HealthPoint: ' + RedHouse}`; houseMenu.style.display = 'block'; bottomMenu.style.display = 'none'; mainHouse.setAttribute('src', 'img/houseRed.png');" class="house"></button></div>
+                        <span class="right_angle"></span>
+                    </div>
+                </div>
+                    <div class="grid_line4">
+                        <div class="hexagon">
+                            <span class="left_angle"></span>
+                            <div class="center"><button type="button" oncontextmenu="moves(16); return false" class="tile"></button></div>
+                            <span class="right_angle"></span>
+                        </div>
+                        <div class="hexagon">
+                            <span class="left_angle"></span>
+                            <div class="center"><button type="button" oncontextmenu="moves(17); return false" class="tile"></button></div>
+                            <span class="right_angle"></span>
+                        </div>
+                        <div class="hexagon">
+                            <span class="left_angle"></span>
+                            <div class="center"><button type="button" oncontextmenu="moves(18); return false" class="tile"></button></div>
+                            <span class="right_angle"></span>
+                        </div>
+                        <div class="hexagon">
+                            <span class="left_angle"></span>
+                            <div class="center"><button type="button" oncontextmenu="moves(19); return false" class="tile"></button></div>
+                            <span class="right_angle"></span>
+                        </div>
+                        <div class="hexagon">
+                            <span class="left_angle"></span>
+                            <div class="center"><button type="button" oncontextmenu="moves(20); return false" class="tile"></button></div>
+                            <span class="right_angle"></span>
+                        </div>
+                        <div class="hexagon">
+                            <span class="left_angle"></span>
+                            <div class="center"><button type="button" oncontextmenu="moves(21); return false" class="tile"></button></div>
+                            <span class="right_angle"></span>
+                        </div>
+                    </div>
+                        <div class="grid_line5">
+                            <div class="hexagon">
+                                <span class="left_angle"></span>
+                                <div class="center"><button type="button" oncontextmenu="moves(22); return false" class="tile"></button></div>
+                                <span class="right_angle"></span>
+                            </div>
+                            <div class="hexagon">
+                                <span class="left_angle"></span>
+                                <div class="center"><button type="button" oncontextmenu="moves(23); return false" class="tile"></button></div>
+                                <span class="right_angle"></span>
+                            </div>
+                            <div class="hexagon">
+                                <span class="left_angle"></span>
+                                <div class="center"><button type="button" oncontextmenu="moves(24); return false" class="tile"></button></div>
+                                <span class="right_angle"></span>
+                            </div>
+                            <div class="hexagon">
+                                <span class="left_angle"></span>
+                                <div class="center"><button type="button" oncontextmenu="moves(25); return false" class="tile"></button></div>
+                                <span class="right_angle"></span>
+                            </div>
+                            <div class="hexagon">
+                                <span class="left_angle"></span>
+                                <div class="center"><button type="button" oncontextmenu="moves(26); return false" class="tile"></button></div>
+                                <span class="right_angle"></span>
+                            </div>
+                        </div>
+                </form>
+</div>
+                    <div class="bottomMenu">
+                        <div class="menu" name="bottomMenu" id="bottomMenu" style="display: block;">
+                            <img src="img/bbarb.png" class="unitMenu">
+                            <input readonly value="HealthPoint: 20" class="char">
+                            <input readonly value="Atack: 10" class="char">
+                            <input readonly value="Defense: 2" class="char">
+                            <input readonly value="Turns: 1/1" class="show-turn" id="botTurn"> 
+                        </div>
+                        <div class="houseMenu" name="houseMenu" id="houseMenu" style="display: none;">
+                            <div style="width: 260px; position: absolute; border: 1px solid; left: 12px; top: 50px;">
+                                <img src="img/houseBlue.png" class="mainHouse" id="mainHouse">
+                            </div>
+                            <div class="makeButtons">
+                                <img src="img/bbarb.png" class="btmMenuBarb"><button class="houseBtns" onclick=" Production = 0; createUnit(10);"><p id="MKBarb" style="font-size: 18px;">Make barbarian: 2 turns</p></button>
+                                <img src="img/barrow.png" class="btmMenuArch"><button class="houseBtns" onclick="Production = 1; createUnit(10);"><p id="MKArr" style="font-size: 18px;">Make archer: 2 turns</p></button>
+                                <button class="houseBtns" onclick="Production = 2; createUnit(10);"><p id="MKArr" style="font-size: 18px;"><p id="MKHorse" style="font-size: 18px;">Make horseman: 2 turns</p></button>
+                            </div>
+                            <input readonly value="HealthPoint: 100" id="tavernHP" style="width: 150px; position: absolute; left: 60px; top: 10px; background-color: aqua; ">
+                            <img src="img/blueHorse.png" class="btmMenuHorse">
+                        </div>
+                    </div>
+                    <script src="/socket.io/socket.io.js"></script>
+                    <script src="JS/moving.js"></script>
+</body>
+</html>

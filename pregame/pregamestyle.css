@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background-color: rgb(204, 204, 204);
+}
+
+a {
+    cursor: pointer;
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 0.4px;
+    word-spacing: -0.4px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
+.header-buttons {
+    transform: translate(100px, 0px);
+    max-width: fit-content;
+    animation-name: GoLeft;
+    animation-duration: 0.9s;
+}
+
+.rules-button {
+    font-size: 30px;
+}
+
+.rules-button:hover {
+    text-decoration: underline solid rgb(68, 68, 68);
+}
+
+@keyframes GoLeft {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(100px, 0px);
+    }
+}
+
+.inf {
+    float: right;
+    width: 20%;
+    margin-right: 10%;
+}
+
+.about {
+    display: flex;
+    font-family: Impact, Charcoal, sans-serif;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.about-game {
+    margin-top: 10%;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    word-spacing: -0.4px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
+.write-smth {
+    position: absolute;
+    width: fit-content;
+    margin-top: 25%;
+    margin-left: 5%;
+}
+
+.review {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.write {
+    margin-top: 10px;
+}
+
+.field {
+    border-radius: 5px;
+    min-height: 50px;
+    max-height: 350px;
+    max-width: 350px;
+    min-width: 300px;
+    vertical-align: top;
+    border-style: none;
+    border: 1px solid black;
+}
+
+.field:focus {
+    outline: none;
+}
+
+.send {
+    width: 100px;
+    height: 33px;
+    display: block;
+    margin-top: 15px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to left, rgb(29, 29, 151), #4a22dc, rgb(29, 29, 151));
+    background-size: 200%;
+    transition: .5s;
+    border-style: none;
+    cursor: pointer;
+}
+
+.send:focus {
+    outline: none;
+}
+
+.send-back {
+    background-position: right;
+}
+
+.players-inf {
+    transform: translate(0, 500%);
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    min-height: 150px;
+}
+
+.meetings {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+#meetings {
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 0.4px;
+    word-spacing: -0.4px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    font-size: 24px;
+    text-shadow: 3px 11px 2px rgba(191, 191, 191, 1);
+}
+
+.play-button-container {
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0, 50%);
+    width: 150px;
+    height: 75px;
+    color: #fff;
+	background: linear-gradient(to left, rgb(29, 29, 151), #4a22dc, rgb(29, 29, 151));
+    background-size: 200%;
+    transition: .5s;
+    -webkit-box-shadow: 0px 11px 16px 5px rgba(0,0,0,0.52); 
+    box-shadow: 0px 11px 16px 5px rgba(0,0,0,0.52);
+}
+
+.play-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 17%;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.play-button-container:hover {
+    background-position: right;
+}

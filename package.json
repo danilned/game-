@@ -1,0 +1,26 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "game server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js babel-node --presets es2015 app.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "nodejs"
+  ],
+  "author": " <danil_ned4@mail.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "fs-extra": "^9.0.1",
+    "socket.io": "^3.0.4"
+  }
+}
