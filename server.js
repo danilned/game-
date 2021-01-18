@@ -36,7 +36,7 @@ app.post('/', (req, res) => {
 
 var PlayerCount = 0;
 
-server.listen(82, () => {
+server.listen(80, () => {
     console.log('Server has been started...');
 })
 
