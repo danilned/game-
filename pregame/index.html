@@ -42,7 +42,7 @@
 
         function req(a) {
             const request = new XMLHttpRequest();
-            request.open("POST", "http://localhost:82");
+            request.open("POST", "http://twolords.ga");
             request.setRequestHeader("ReqUrl", `${JSONReq}`);
             request.send();
             request.addEventListener("readystatechange", function(){
@@ -59,7 +59,7 @@
         }
 
             const request1 = new XMLHttpRequest();
-            request1.open("POST", "http://localhost:82");
+            request1.open("POST", "http://twolords.ga");
             request1.setRequestHeader("ReqUrl", `1`);
             request1.send();
             request1.addEventListener("readystatechange", function(){
